@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fff;
+    --fg: #000;
+    --max-w: 640px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Suit', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 80px 24px 40px;
+}
+
+.hero {
+    margin-bottom: 48px;
+}
+
+.hero h1 {
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+}
+
+.hero-sub {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.rule {
+    border: none;
+    border-top: 1px solid var(--fg);
+    margin: 48px 0;
+}
+
+html.js .section {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+html.js .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.section-img {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 28px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.list li {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+}
+
+.list li::before {
+    content: '\00B7';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.list li strong {
+    font-weight: 700;
+}
+
+.note {
+    margin-top: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: 1.5;
+}
+
+.credit {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 24px 24px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-top: 1px solid var(--fg);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 48px 20px 32px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-sub {
+        margin-top: 14px;
+        font-size: 13px;
+    }
+
+    .rule {
+        margin: 36px 0;
+    }
+
+    .section-label {
+        margin-bottom: 20px;
+    }
+
+    .section-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        gap: 3px;
+    }
+
+    .list li {
+        font-size: 13px;
+    }
+
+    .credit {
+        padding: 20px 20px 40px;
+        font-size: 9px;
+    }
+}
