@@ -6,74 +6,113 @@
     <meta name="color-scheme" content="light">
     <title>FT</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="motion.css">
 </head>
 <body>
+    <canvas class="numerals" aria-hidden="true"></canvas>
+
     <main>
         <header class="hero">
             <h1>FASHION IS<br>FUNCTION</h1>
             <p class="hero-sub">FT 엪티 엪엪 엪냥이 성인</p>
         </header>
 
-        <hr class="rule">
-
         <section class="section">
-            <p class="section-label">❶ ABOUT</p>
-            <img src="images/about.png" alt="" class="section-img" loading="lazy">
-            <ul class="list">
-                <li>다장르 사담계</li>
-                <li>일상, 셀털 거의 안 하지만 딱히 장르를 열심히 파지도 않습니다 전 그때 그때 하고 싶은 얘기만 합니다⋯</li>
-                <li>MM MF FM FF 전부 빨음</li>
-                <li>호불호 관련 이야기 잦음</li>
-                <li>게임 애니 연뮤 드라마 소설 만화 드씨 등 매체 안 가림</li>
-                <li>2차 CP, NCP, 드림, 유사 등 내키는 방식대로 놉니다</li>
-                <li>R18 G18 RG18 자유롭게 필터링 없이 이야기합니다</li>
-                <li>교류 적은 사람 수시로 정리하는데 딱히 별 생각 없어서 다시 걸으셔도 돼요</li>
-                <li>종종 <b>트러블 없이</b> 끊긴 구지인들 보면 반가워서 팔로 걸거나 구독합니다 불편하심 끊어 주세요!</li>
-                <li>모든 팔로우는 맞팔로우 강요 XXXX (리스트에 넣었다 빼거나 팔로했다가 다른 구독계로 뺐다가 다시 팔로했다가 이런 식이라서요)</li>
-                <li><strong>보통 트윗 삭제 십 분 이내로 함</strong> 필요하신 내용은 미리 말씀 부탁</li>
-                <li><strong>마음, 리트윗 금방 풀어요</strong> 문제 있거나 기분 상해서가 절대 XXXX</li>
-            </ul>
+            <div class="num" data-num="01" aria-hidden="true"></div>
+            <div class="section-body">
+                <h2 class="section-label">About</h2>
+                <button type="button" class="zoom" aria-label="About 이미지 크게 보기">
+                    <img src="images/about.png" alt="" class="section-img" loading="lazy">
+                </button>
+                <h3 class="group-label">♡</h3>
+                <ul class="list">
+                    <li>다장르 사담계</li>
+                    <li>일상 노출, 셀털 거의 X 근데 딱히 장르를 열심히 파지도 않고요 전 그때 그때 하고 싶은 얘기만 합니다</li>
+                    <li>호불호 관련 이야기 잦음</li>
+                </ul>
+                <h3 class="group-label">♡♡</h3>
+                <ul class="list">
+                    <li>MM MF FM FF 전부 빨음</li>
+                    <li>게임 애니 연뮤 드라마 소설 만화 드씨 등 매체 안 가림</li>
+                    <li>2차 CP, NCP, 드림, 유사 등 내키는 방식대로 놉니다</li>
+                    <li>R18 G18 RG18 자유롭게 필터링 없이 이야기합니다</li>
+                    </ul>
+                <h3 class="group-label">♡♡♡</h3>
+                <ul class="list">
+                    <li><strong>보통 트윗 삭제 십 분 이내로 함</strong> 필요하신 내용은 미리 말씀 부탁</li>
+                    <li><strong>마음, 리트윗 금방 풀어요</strong> 문제 있거나 기분 상해서가 절대 XXXX</li>
+                </ul>
+                <h3 class="group-label">♡♡♡♡</h3>
+                <ul class="list">
+                    <li>교류 적은 사람 수시로 정리하는데 딱히 별 생각 없어서 다시 걸으셔도 돼요</li>
+                    <li>종종 <b>트러블 없이</b> 끊긴 구지인들 보면 반가워서 팔로 걸거나 구독합니다 불편하심 끊어 주세요!</li>
+                    <li>모든 팔로우는 맞팔로우 강요 XXXX (리스트에 넣었다 빼거나 팔로했다가 다른 구독계로 뺐다가 다시 팔로했다가 이런 식이라서요)</li>
+                </ul>
+            </div>
         </section>
 
-        <hr class="rule">
-
         <section class="section">
-            <p class="section-label">❷ LIKES</p>
-            <img src="images/세메우케.png" alt="" class="section-img" loading="lazy">
-            <ul class="list">
-                <li><strong>퍼그 (진짜 견)</strong></li>
-                <li><strong>멋진 신세계 車世界</strong></li>
-                <li><strong>    연장선으로 한국 배우 許南俊</strong></li>
-                <li>중국 배우 宋威龙</li>
-                <li>버닝까진 아니지만 좋아하고 자주 이야기함: 유메쿠로 빛밤 도키걸즈</li>
-                <li>PERSONA CoE BACCANO UN-GO MONOGATARI</li>
-                <li>풍화설월 듀라라라 아카기 도박마 카케구루이 죠죠 중국 네 글자 겜</li>
-                <li>주인공왼 개팔자왼 예민왼 능청른 또라이른 외계인른 별창른</li>
-            </ul>
+            <div class="num" data-num="02" aria-hidden="true"></div>
+            <div class="section-body">
+                <h2 class="section-label">Likes</h2>
+                <button type="button" class="zoom" aria-label="Likes 이미지 크게 보기">
+                    <img src="images/세메우케.png" alt="" class="section-img" loading="lazy">
+                </button>
+                <h3 class="group-label">Burning</h3>
+                <ul class="list">
+                    <li><strong>♡ 퍼그 (진짜 견) ♡</strong></li>
+                    <li>빛과 밤의 사랑 157 + 종종 0</li>
+                </ul>
+                <h3 class="group-label">언급하는 2.5/3D</h3>
+                <ul class="list">
+                    <li>멋진 신세계 車世界 / 성세천하 李泰</li>
+                    <li>중국 배우 宋威龙 / 姚弛 / 鞠婧祎</li>
+                </ul>
+                <h3 class="group-label">영혼의 조각들</h3>
+                <ul class="list">
+                    <li>PERSONA CoE BACCANO UN-GO MONOGATARI</li>
+                    <li>풍화설월 듀라라라 아카기 도박마 카케구루이</li>
+                    <li>주인공왼 개팔자왼 예민왼 능청른 또라이른 외계인른 별창른</li>
+                </ul>
+            </div>
         </section>
 
-        <hr class="rule">
-
         <section class="section">
-            <p class="section-label">❸ DISLIKES</p>
-            <ul class="list">
-                <li>LLM 채팅을 진심으로 너무 사랑하시는 분</li>
-                <li>이슈에 관심 많으신 분 (한두 번 보는 것도 싫어해요)</li>
-          <li class="notice">
-            <b>이슈란 대개 이런 것을 의미합니다:</b> TPRG 논쟁, 개인간의 공론화,
-            현재 화두가 되는 주제이나 큰 범위에서 서브컬쳐에 한정된 내용 등.
-            논제보단 확산 노이즈의 여부와 타이밍 정도를 더 중요하게 봅니다
-          </li>
-                <li>흔적 및 @ 없는 트훔, 하셔도 되는데 RT되거나 퍼가시면 지우고 그분께도 삭제 요청 부탁</li>
-                <li>이외 유동적으로 스루 전부 직멘만 X</li>
-            </ul>
+            <div class="num" data-num="03" aria-hidden="true"></div>
+            <div class="section-body">
+                <h2 class="section-label">Dislikes</h2>
+                <ul class="list">
+                    <li>LLM 채팅을 진심으로 너무 사랑하시는 분</li>
+                    <li>이슈에 관심 많으신 분 (한두 번 보는 것도 싫어해요)</li>
+                    <li class="notice">
+                        <b>이슈란 대개 이런 것을 의미합니다:</b> TPRG 논쟁, 개인간의 공론화,
+                        현재 화두가 되는 주제이나 큰 범위에서 서브컬쳐에 한정된 내용 등.
+                        논제보단 확산 노이즈의 여부와 타이밍 정도를 더 중요하게 봅니다
+                    </li>
+                    <li>흔적 및 @ 없는 트훔, 하셔도 되는데 RT되거나 퍼가시면 지우고 그분께도 삭제 요청 부탁</li>
+                    <li>이외 유동적으로 스루 전부 직멘만 X</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="credit">
-        <span>latest 26.08.07</span>
+        <span>latest 26.10.31</span>
     </footer>
 
+    <dialog class="viewer" aria-label="이미지 보기">
+        <img alt="">
+        <form method="dialog">
+            <button class="viewer-close" aria-label="닫기">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            </button>
+        </form>
+    </dialog>
+
     <script src="script.js"></script>
+    <script src="numerals.js"></script>
+    <script src="viewer.js"></script>
 </body>
 </html>
